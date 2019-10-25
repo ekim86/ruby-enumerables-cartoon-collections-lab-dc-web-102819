@@ -1,9 +1,8 @@
-
 dwarves = ["Doc", "Dopey", "Bashful", "Grumpy"]
 planeteer_calls = ["earth", "wind", "fire", "water", "heart"]
 call_screams = ["bo", "bam", "boom", "bazam", "powzer"]
 
-def roll_call_dwarves(dwarves)
+def roll_call_dwarves(array)
   i = 0 
   while i < array.length 
     puts "#{i + 1}. #{array[i]}"
@@ -15,7 +14,7 @@ roll_call_dwarves(dwarves)
 
 
 
-def summon_captain_planet(veggies)
+def summon_captain_planet(array)
   nu_array = []
   i = 0 
   while i < array.length 
@@ -28,7 +27,7 @@ end
 summon_captain_planet(planeteer_calls)
 
 
-def long_planeteer_calls(fruits) 
+def long_planeteer_calls(array) 
   i = 0 
   if  array.any? {|i| i.length > 4}
     return true
